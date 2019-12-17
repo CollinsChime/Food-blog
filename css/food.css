@@ -1,0 +1,130 @@
+html{
+  font-family: 'Maven Pro', sans-serif;
+  color: #2b580c;
+}
+.background{
+  /* background-color: #e9e5dd; */
+  background-color: rgba(233, 229, 221, 0.8);
+}
+
+header{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+header h1{
+  margin: auto;
+  padding: 20px;
+}
+li{
+  list-style: none;
+  padding: 10px
+}
+ul{
+  padding: 0;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+article , sidebar-widget{
+  padding: 15px;
+  margin: 15px 0;
+}
+article  > header{
+  background: #f1d6ab;
+  }
+img{
+  width: 100%;
+}
+i{
+  margin: 0 6px;
+}
+td:nth-child(2) {
+  padding-left: 40px;
+}
+
+@media (min-width: 1000px) {
+  body{
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+header{
+  flex-direction: row;
+}
+header li{
+  display: inline-block;
+}
+header h1, header nav{
+  flex: 1;
+}
+header h1{
+  text-align: left;
+}
+header nav{
+  text-align: right;
+}
+
+/* blog */
+.wrapper{
+  flex-direction: row;
+}
+main{
+  flex: 3;
+}
+aside{
+  flex: 1.4;
+  margin-left: 20px;
+}
+article > header{
+  justify-content: space-around;
+}
+}
+
+.food-image{
+  background: url(../images/background.jpg) no-repeat center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.food-text{
+  text-align: center;
+  font-size: 2em;
+  padding: 1.5em;
+  border-radius: 10px;
+  line-height: 50px;
+}
+a{
+  text-decoration: none;
+  color: #2b580c;
+}
+a:hover{
+  color: white;
+  background-color: #0c9463;
+}
+p{
+  line-height: 2;
+
+}
+.circular{
+  border-radius: 100%;
+  width: 200px;
+  margin: 30px;
+  margin-left: 5px;
+  justify-content: center;
+
+}
+.copyright{
+  margin: auto;
+  text-align: center;
+  padding: 20px 0 ;
+  font-size: 0.75rem;
+}
+.about-me{
+  padding: 20px 40px;
+}
